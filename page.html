@@ -1,0 +1,2422 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 lt-ie6 " lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <html lang="fr" class="no-js ie9" lang="en"> <![endif]-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+	<link rel="apple-touch-icon" href="/img/app_icon.png" />
+
+	<meta name="robots" content="NOFOLLOW, NOINDEX">
+	<title>Dashboard • Belga Meubelen</title>
+		<script type="text/javascript">
+		var help_class_name = 'AdminDashboard';
+		var iso_user = 'en';
+		var full_language_code = 'en-us';
+		var country_iso_code = 'BE';
+		var _PS_VERSION_ = '1.6.0.14';
+		var roundMode = 2;
+		var youEditFieldFor = '';
+		var autorefresh_notifications = '1';
+		var new_order_msg = 'A new order has been placed on your shop.';
+		var order_number_msg = 'Order number ';
+		var total_msg = 'Total ';
+		var from_msg = 'From ';
+		var see_order_msg = 'View this order';
+		var new_customer_msg = 'A new customer registered on your shop.';
+		var customer_name_msg = 'Customer name ';
+		var new_msg = 'A new message was posted on your shop.';
+		var see_msg = 'Read this message';
+		var token = '79c48ec376a405004329484a488294c8';
+		var token_admin_orders = '774c2441d22e426c966fca52f70b692b';
+		var token_admin_customers = 'e0269ef52e4786ce2237d373f5247de1';
+		var token_admin_customer_threads = 'c7b019c6ec75973a3509d6b2344f0ec3';
+		var currentIndex = 'index.php?controller=AdminDashboard';
+		var employee_token = 'df42b73b738a1eaefad39628cafc55a6';
+		var choose_language_translate = 'Choose language';
+		var default_language = '6';
+		var admin_modules_link = 'index.php?controller=AdminModules&token=b689878a6ce84642e3e4267977956ceb';
+		var tab_modules_list = '';
+		var update_success_msg = 'Update successful';
+		var errorLogin = 'PrestaShop was unable to log in to Addons. Please check your credentials and your Internet connection.';
+		var search_product_msg = 'Search for a product';
+	</script>
+	<link href="/apanel/themes/default/css/admin-theme.css" rel="stylesheet" type="text/css"/>
+	<link href="/modules/sampledatainstall/views/templates/css/styles.css" rel="stylesheet" type="text/css"/>
+	<link href="/modules/mollie/css/mollie.css" rel="stylesheet" type="text/css"/>
+	<link href="/js/jquery/plugins/alerts/jquery.alerts.css" rel="stylesheet" type="text/css"/>
+	<link href="/js/jquery/plugins/chosen/jquery.chosen.css" rel="stylesheet" type="text/css"/>
+	<link href="/js/jquery/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+	<link href="/js/jquery/ui/themes/base/jquery.ui.core.css" rel="stylesheet" type="text/css"/>
+	<link href="/js/jquery/ui/themes/base/jquery.ui.slider.css" rel="stylesheet" type="text/css"/>
+	<link href="/js/jquery/ui/themes/base/jquery.ui.theme.css" rel="stylesheet" type="text/css"/>
+	<link href="/js/jquery/ui/themes/base/jquery.ui.datepicker.css" rel="stylesheet" type="text/css"/>
+	<link href="/apanel/themes/default/css/vendor/nv.d3.css" rel="stylesheet" type="text/css"/>
+	<link href="/apanel/themes/default/css/overrides.css" rel="stylesheet" type="text/css"/>
+			<script type="text/javascript" src="/js/jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/js/jquery/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/modules/sampledatainstall/views/templates/js/tab.js"></script>
+<script type="text/javascript" src="/modules/sampledatainstall/views/templates/js/import.js"></script>
+<script type="text/javascript" src="/modules/ganalytics/views/js/GoogleAnalyticActionLib.js"></script>
+<script type="text/javascript" src="/js/jquery/plugins/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="/js/jquery/plugins/alerts/jquery.alerts.js"></script>
+<script type="text/javascript" src="/js/jquery/plugins/jquery.chosen.js"></script>
+<script type="text/javascript" src="/js/jquery/plugins/jquery.autosize.js"></script>
+<script type="text/javascript" src="/js/jquery/plugins/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="/js/jquery/plugins/growl/jquery.growl.js"></script>
+<script type="text/javascript" src="/js/jquery/ui/jquery.ui.core.min.js"></script>
+<script type="text/javascript" src="/js/jquery/ui/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="/js/jquery/ui/jquery.ui.mouse.min.js"></script>
+<script type="text/javascript" src="/js/jquery/ui/jquery.ui.slider.min.js"></script>
+<script type="text/javascript" src="/js/jquery/ui/jquery.ui.datepicker.min.js"></script>
+<script type="text/javascript" src="/js/jquery/ui/i18n/jquery.ui.datepicker-en.js"></script>
+<script type="text/javascript" src="/js/admin.js"></script>
+<script type="text/javascript" src="/js/tools.js"></script>
+<script type="text/javascript" src="/js/jquery/plugins/timepicker/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="/apanel/themes/default/js/vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="/apanel/themes/default/js/vendor/modernizr.min.js"></script>
+<script type="text/javascript" src="/apanel/themes/default/js/modernizr-loads.js"></script>
+<script type="text/javascript" src="/apanel/themes/default/js/vendor/moment-with-langs.min.js"></script>
+<script type="text/javascript" src="/apanel/themes/default/js/help.js"></script>
+<script type="text/javascript" src="/js/admin/notifications.js"></script>
+<script type="text/javascript" src="/modules/dashactivity/views/js/dashactivity.js"></script>
+<script type="text/javascript" src="/js/date.js"></script>
+<script type="text/javascript" src="/modules/dashtrends/views/js/dashtrends.js"></script>
+<script type="text/javascript" src="/modules/dashgoals/views/js/dashgoals.js"></script>
+<script type="text/javascript" src="/js/vendor/d3.v3.min.js"></script>
+<script type="text/javascript" src="/apanel/themes/default/js/vendor/nv.d3.min.js"></script>
+<script type="text/javascript" src="/js/admin/dashboard.js"></script>
+<script type="text/javascript" src="/apanel/themes/default/js/date-range-picker.js"></script>
+<script type="text/javascript" src="/apanel/themes/default/js/calendar.js"></script>
+
+	
+			<script type="text/javascript">
+	moduleSDIUrl = "index.php?tab=AdminModules&configure=sampledatainstall&token=b689878a6ce84642e3e4267977956ceb";
+	moduleSDILink = "Install demo store";
+	SDI_text_install = "You can use Sample Data Install module to install store demo content";
+	SDI_text_close = "Close";
+	SDI_title_close = "Close message";
+	SDI_text_remove = "Ignore &amp; disable";
+	SDI_title_remove = "Disable sample data install module";
+	SDI_title_use = "Install sample data";
+	SDI_show_message = "0";
+	SDI_ajax_dir = "/modules/sampledatainstall/sampledatainstall-ajax.php";
+</script><style>
+.icon-AdminSmartBlog:before{
+  content: "\f14b";
+   }
+ 
+</style>
+			<script type="text/javascript">
+				(window.gaDevIds=window.gaDevIds||[]).push('d6YPbH');
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-102512854-1', 'auto');
+				ga('require', 'ec');ga('set', 'nonInteraction', true);</script>
+			<!--
+		// @todo: multishop color
+		<style type="text/css">
+			div#header_infos, div#header_infos a#header_shopname, div#header_infos a#header_logout, div#header_infos a#header_foaccess {color:#383838}
+		</style>
+	-->
+	</head>
+
+	<body class="ps_back-office page-sidebar admindashboard">
+	
+	<header id="header" class="bootstrap">
+		<nav id="header_infos" role="navigation">
+			<div class="navbar-header">
+				<button id="header_nav_toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-primary">
+					<i class="icon-reorder"></i>
+				</button>
+
+				<a id="header_shopname" href="index.php?controller=AdminDashboard&amp;token=79c48ec376a405004329484a488294c8">
+					<img src="/img/prestashop-avatar.png" alt="Belga Meubelen" />
+					Belga Meubelen
+				</a>
+
+				<ul id="header_notifs_icon_wrapper">
+					<li id="orders_notif" class="dropdown" data-type="order">
+						<a href="javascript:void(0);" class="dropdown-toggle notifs" data-toggle="dropdown">
+							<i class="icon-shopping-cart"></i>
+							<span id="orders_notif_number_wrapper" class="notifs_badge hide">
+								<span id="orders_notif_value">0</span>
+							</span>
+						</a>
+						<div class="dropdown-menu notifs_dropdown">
+							<section id="orders_notif_wrapper" class="notifs_panel">
+								<div class="notifs_panel_header">
+									<h3>Latest Orders</h3>
+								</div>
+								<div id="list_orders_notif" class="list_notif">
+									<span class="no_notifs">
+										No new orders have been placed on your shop.
+									</span>
+								</div>
+								<div class="notifs_panel_footer">
+									<a href="index.php?controller=AdminOrders&amp;token=774c2441d22e426c966fca52f70b692b">Show all orders</a>
+								</div>
+							</section>
+						</div>
+					</li>
+					<li id="customers_notif" class="dropdown" data-type="customer">
+						<a href="javascript:void(0);" class="dropdown-toggle notifs" data-toggle="dropdown">
+							<i class="icon-user"></i>
+							<span id="customers_notif_number_wrapper" class="notifs_badge hide">
+								<span id="customers_notif_value">0</span>
+							</span>
+						</a>
+						<div class="dropdown-menu notifs_dropdown">
+							<section id="customers_notif_wrapper" class="notifs_panel">
+								<div class="notifs_panel_header">
+									<h3>Latest Registrations</h3>
+								</div>
+								<div id="list_customers_notif" class="list_notif">
+									<span class="no_notifs">
+										No new customers have registered on your shop.
+									</span>
+								</div>
+								<div class="notifs_panel_footer">
+									<a href="index.php?controller=AdminCustomers&amp;token=e0269ef52e4786ce2237d373f5247de1">Show all customers</a>
+								</div>
+							</section>
+						</div>
+					</li>
+					<li id="customer_messages_notif" class="dropdown" data-type="customer_message">
+						<a href="javascript:void(0);" class="dropdown-toggle notifs" data-toggle="dropdown">
+							<i class="icon-envelope"></i>
+							<span id="customer_messages_notif_number_wrapper" class="notifs_badge hide">
+								<span id="customer_messages_notif_value" >0</span>
+							</span>
+						</a>
+						<div class="dropdown-menu notifs_dropdown">
+							<section id="customer_messages_notif_wrapper" class="notifs_panel">
+								<div class="notifs_panel_header">
+									<h3>Latest Messages</h3>
+								</div>
+								<div id="list_customer_messages_notif" class="list_notif">
+									<span class="no_notifs">
+										No new messages have been posted on your shop.
+									</span>
+								</div>
+								<div class="notifs_panel_footer">
+									<a href="index.php?controller=AdminCustomerThreads&amp;token=c7b019c6ec75973a3509d6b2344f0ec3">Show all messages</a>
+								</div>
+							</section>
+						</div>
+					</li>
+				</ul>
+				<ul id="header_quick">
+					<li class="dropdown">
+						<a href="javascript:void(0)" id="quick_select" class="dropdown-toggle" data-toggle="dropdown">Quick Access <i class="icon-caret-down"></i></a>
+						<ul class="dropdown-menu">
+															<li >
+									<a href="index.php?controller=AdminModules&amp;configure=homeslider&amp;tab_module=front_office_features&amp;module_name=homeslider&amp;token=b689878a6ce84642e3e4267977956ceb">
+																					<i class="icon-chevron-right icon-fw"></i>
+																				Image slider for your homepage
+									</a>
+								</li>
+															<li >
+									<a href="index.php?controller=AdminCategories&amp;addcategory&amp;token=cb6c7685941a76e47ce4b62378fb4227">
+																					<i class="icon-chevron-right icon-fw"></i>
+																				New category
+									</a>
+								</li>
+															<li >
+									<a href="index.php?controller=AdminProducts&amp;addproduct&amp;token=756ad29021562a69837cab00638a206d">
+																					<i class="icon-chevron-right icon-fw"></i>
+																				New product
+									</a>
+								</li>
+															<li >
+									<a href="index.php?controller=AdminCartRules&amp;addcart_rule&amp;token=708175a8a0f801fb6ad63ccdf302ee96">
+																					<i class="icon-chevron-right icon-fw"></i>
+																				New voucher
+									</a>
+								</li>
+															<li >
+									<a href="index.php?controller=AdminModules&amp;token=a06029a3f42073253179975d327d5f2e&amp;configure=smartblog&amp;token=b689878a6ce84642e3e4267977956ceb">
+																					<i class="icon-chevron-right icon-fw"></i>
+																				Smart Blog Setting
+									</a>
+								</li>
+															<li >
+									<a href="index.php?controller=AdminModules&amp;configure=themeconfigurator&amp;tab_module=front_office_features&amp;module_name=themeconfigurator&amp;token=b689878a6ce84642e3e4267977956ceb">
+																					<i class="icon-chevron-right icon-fw"></i>
+																				Theme Configurator
+									</a>
+								</li>
+														<li class="divider"></li>
+														<li >
+								<a href="javascript:void(0);" class="ajax-quick-link" data-method="add">
+									<i class="icon-plus-circle"></i>
+									Add current page to QuickAccess
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<script>
+					$(function() {
+						$('.ajax-quick-link').on('click', function(e){
+							e.preventDefault();
+							$.ajax({
+								type: 'POST',
+								headers: { "cache-control": "no-cache" },
+								async: false,
+								url: "index.php?controller=AdminQuickAccesses&token=721d6ab0568ceb3756355fbb78673297" + "&action=GetUrl" + "&rand=199" + "&ajax=1" + "&method=" + $(this).data('method') + "&id_quick_access=" + $(this).data('quicklink-id'),
+								data: {
+									"url": "controller=AdminDashboard",
+									"name": "Dashboard - View details",
+									"icon": ""
+								},
+								dataType: "json",
+								success: function(data) {
+									var quicklink_list ='';
+									$.each(data,function(index,value){
+										quicklink_list += '<li><a href="' + data[index]['link'] + '&token=' + data[index]['token'] + '"><i class="icon-chevron-right"></i> ' + data[index]['name'] + '</a></li>';
+									});
+									$("#header_quick ul.dropdown-menu").html(quicklink_list);
+									showSuccessMessage(update_success_msg);
+								}
+							});
+						});
+					});
+				</script>
+				<ul id="header_employee_box">
+											<li>
+							<a href="#" class="addons_connect toolbar_btn" data-toggle="modal" data-target="#modal_addons_connect" title="Connect to PrestaShop Marketplace account">
+								<i class="icon-chain-broken"></i>
+								<span class="string-long">Connect to PrestaShop Marketplace account</span>
+								<span class="string-short">PrestaShop Marketplace</span>
+							</a>
+						</li>
+										<li>
+						<a href="http://www.belgastoelen.be/en/?live_configurator_token=e4adf64e9a3a3a0b135ad8387984b715&amp;id_employee=10&amp;id_shop=3" id="header_foaccess" class="_blank" title="View my shop">
+							<i class="icon-star"></i>
+							<span class="string-long">My shop</span>
+							<span class="string-short">Shop</span>
+						</a>
+					</li>
+					<li id="employee_infos" class="dropdown">
+						<a href="index.php?controller=AdminEmployees&amp;token=df42b73b738a1eaefad39628cafc55a6&amp;id_employee=10&amp;updateemployee" class="employee_name dropdown-toggle" data-toggle="dropdown">
+							<span class="employee_avatar_small">
+																<img class="imgm img-thumbnail" alt="" src="http://profile.prestashop.com/admin%40gmail.com.jpg" width="32" height="32" />
+															</span>
+							<span class="string-long">admin&nbsp;admin</span>
+							<span class="string-short">Me</span>
+							<i class="caret"></i>
+						</a>
+						<ul id="employee_links" class="dropdown-menu">
+							<li>
+								<span class="employee_avatar">
+									<img class="imgm img-thumbnail" alt="" src="http://profile.prestashop.com/admin%40gmail.com.jpg" width="96" height="96" />
+								</span>
+							</li>
+							<li class="text-center">admin admin</li>
+							<li class="divider"></li>
+							<li><a href="index.php?controller=AdminEmployees&amp;token=df42b73b738a1eaefad39628cafc55a6&amp;id_employee=10&amp;updateemployee"><i class="icon-wrench"></i> My preferences</a></li>
+														<li class="divider"></li>
+							<li><a id="header_logout" href="index.php?controller=AdminDashboard&amp;token=79c48ec376a405004329484a488294c8&amp;logout"><i class="icon-signout"></i> Sign out</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<span id="ajax_running">
+					<i class="icon-refresh icon-spin icon-fw"></i>
+				</span>
+
+				</div>
+		</nav>
+	</header>
+
+	<div id="main">
+		<div class="bootstrap">
+	<nav id="nav-sidebar" role="navigation">
+				<ul class="menu">
+			<li class="searchtab">
+				
+<form id="header_search" class="bo_search_form" method="post" action="index.php?controller=AdminSearch&amp;token=8fb2d41620123d27ab5bb4d45fdd4a5b" role="search">
+	<div class="form-group">
+		<input type="hidden" name="bo_search_type" id="bo_search_type" />
+		<div class="input-group">
+			<div class="input-group-btn">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<i id="search_type_icon" class="icon-search"></i>
+					<i class="icon-caret-down"></i>
+				</button>
+				<ul id="header_search_options" class="dropdown-menu">
+					<li class="search-all search-option active">
+						<a href="#" data-value="0" data-placeholder="What are you looking for?" data-icon="icon-search">
+							<i class="icon-search"></i> Everywhere</a>
+					</li>
+					<li class="divider"></li>
+					<li class="search-book search-option">
+						<a href="#" data-value="1" data-placeholder="Product name, SKU, reference..." data-icon="icon-book">
+							<i class="icon-book"></i> Catalog
+						</a>
+					</li>
+					<li class="search-customers-name search-option">
+						<a href="#" data-value="2" data-placeholder="Email, name..." data-icon="icon-group">
+							<i class="icon-group"></i> Customers by name
+						</a>
+					</li>
+					<li class="search-customers-addresses search-option">
+						<a href="#" data-value="6" data-placeholder="123.45.67.89" data-icon="icon-desktop">
+							<i class="icon-desktop"></i> Customers by ip address</a>
+					</li>
+					<li class="search-orders search-option">
+						<a href="#" data-value="3" data-placeholder="Order ID" data-icon="icon-credit-card">
+							<i class="icon-credit-card"></i> Orders
+						</a>
+					</li>
+					<li class="search-invoices search-option">
+						<a href="#" data-value="4" data-placeholder="Invoice Number" data-icon="icon-book">
+							<i class="icon-book"></i> Invoices
+						</a>
+					</li>
+					<li class="search-carts search-option">
+						<a href="#" data-value="5" data-placeholder="Cart ID" data-icon="icon-shopping-cart">
+							<i class="icon-shopping-cart"></i> Carts
+						</a>
+					</li>
+					<li class="search-modules search-option">
+						<a href="#" data-value="7" data-placeholder="Module name" data-icon="icon-puzzle-piece">
+							<i class="icon-puzzle-piece"></i> Modules
+						</a>
+					</li>
+				</ul>
+			</div>
+						<a href="#" class="clear_search hide"><i class="icon-remove"></i></a>
+						<input id="bo_query" name="bo_query" type="text" class="form-control" value="" placeholder="Search" />
+<!--  							<span class="input-group-btn">
+				<button type="submit" id="bo_search_submit" class="btn btn-primary">
+					<i class="icon-search"></i>
+				</button>
+			</span> -->
+		</div>
+	</div>
+
+	<script>
+			</script>
+</form>
+			</li>
+
+			
+
+											<li class="maintab active " id="maintab-AdminDashboard" data-submenu="1">
+					<a href="index.php?controller=AdminDashboard&amp;token=79c48ec376a405004329484a488294c8" class="title" >
+						<i class="icon-AdminDashboard"></i>
+						<span>Dashboard</span>
+					</a>
+									</li>
+															<li class="maintab  has_submenu" id="maintab-AdminCatalog" data-submenu="9">
+					<a href="index.php?controller=AdminProducts&amp;token=756ad29021562a69837cab00638a206d" class="title" >
+						<i class="icon-AdminCatalog"></i>
+						<span>Catalog</span>
+					</a>
+											<ul class="submenu">
+																				<li id="subtab-AdminProducts" >
+								<a href="index.php?controller=AdminProducts&amp;token=756ad29021562a69837cab00638a206d">
+									Products								</a>
+							</li>
+																											<li id="subtab-AdminCategories" >
+								<a href="index.php?controller=AdminCategories&amp;token=cb6c7685941a76e47ce4b62378fb4227">
+									Categories								</a>
+							</li>
+																											<li id="subtab-AdminTracking" >
+								<a href="index.php?controller=AdminTracking&amp;token=c9ea9fd41f37b3400c92a2522ce11651">
+									Monitoring								</a>
+							</li>
+																											<li id="subtab-AdminAttributesGroups" >
+								<a href="index.php?controller=AdminAttributesGroups&amp;token=f7a0f336c23169dfd5fe3ce30d45c907">
+									Product Attributes								</a>
+							</li>
+																											<li id="subtab-AdminFeatures" >
+								<a href="index.php?controller=AdminFeatures&amp;token=2b0c793e8dbde24557ed186ebb9cb251">
+									Product Features								</a>
+							</li>
+																											<li id="subtab-AdminManufacturers" >
+								<a href="index.php?controller=AdminManufacturers&amp;token=9a9bb3f9b3d512e1e335f63f82a6b52d">
+									Manufacturers								</a>
+							</li>
+																											<li id="subtab-AdminSuppliers" >
+								<a href="index.php?controller=AdminSuppliers&amp;token=906ec4e3d5037bc272c646a9e58b1b41">
+									Suppliers								</a>
+							</li>
+																											<li id="subtab-AdminTags" >
+								<a href="index.php?controller=AdminTags&amp;token=66d98ef3ef6c43147af2cede4220ddca">
+									Tags								</a>
+							</li>
+																											<li id="subtab-AdminAttachments" >
+								<a href="index.php?controller=AdminAttachments&amp;token=463ed7bc4d49091bfc9d10f8f47172e2">
+									Attachments								</a>
+							</li>
+																			</ul>
+									</li>
+															<li class="maintab  has_submenu" id="maintab-AdminParentOrders" data-submenu="10">
+					<a href="index.php?controller=AdminOrders&amp;token=774c2441d22e426c966fca52f70b692b" class="title" >
+						<i class="icon-AdminParentOrders"></i>
+						<span>Orders</span>
+					</a>
+											<ul class="submenu">
+																				<li id="subtab-AdminOrders" >
+								<a href="index.php?controller=AdminOrders&amp;token=774c2441d22e426c966fca52f70b692b">
+									Orders								</a>
+							</li>
+																											<li id="subtab-AdminInvoices" >
+								<a href="index.php?controller=AdminInvoices&amp;token=606d2e6501fe68b3667c92aadf6d282e">
+									Invoices								</a>
+							</li>
+																											<li id="subtab-AdminReturn" >
+								<a href="index.php?controller=AdminReturn&amp;token=50ee88a8483cc0b7e549743d2f769201">
+									Merchandise Returns								</a>
+							</li>
+																											<li id="subtab-AdminDeliverySlip" >
+								<a href="index.php?controller=AdminDeliverySlip&amp;token=bfe377b2dad477253072843265e08a34">
+									Delivery Slips								</a>
+							</li>
+																											<li id="subtab-AdminSlip" >
+								<a href="index.php?controller=AdminSlip&amp;token=8fe0a7b790d51b63edcf0a2a1e011122">
+									Credit Slips								</a>
+							</li>
+																											<li id="subtab-AdminStatuses" >
+								<a href="index.php?controller=AdminStatuses&amp;token=09d7bda0b6de7d6e5099fcc5fba9ac5f">
+									Statuses								</a>
+							</li>
+																											<li id="subtab-AdminOrderMessage" >
+								<a href="index.php?controller=AdminOrderMessage&amp;token=fa4cb92e59f476ad1bd442f727cfd95f">
+									Order Messages								</a>
+							</li>
+																			</ul>
+									</li>
+															<li class="maintab  has_submenu" id="maintab-AdminParentCustomer" data-submenu="11">
+					<a href="index.php?controller=AdminCustomers&amp;token=e0269ef52e4786ce2237d373f5247de1" class="title" >
+						<i class="icon-AdminParentCustomer"></i>
+						<span>Customers</span>
+					</a>
+											<ul class="submenu">
+																				<li id="subtab-AdminCustomers" >
+								<a href="index.php?controller=AdminCustomers&amp;token=e0269ef52e4786ce2237d373f5247de1">
+									Customers								</a>
+							</li>
+																											<li id="subtab-AdminAddresses" >
+								<a href="index.php?controller=AdminAddresses&amp;token=89fbc4987f1b31867d1971e5035343b8">
+									Addresses								</a>
+							</li>
+																											<li id="subtab-AdminGroups" >
+								<a href="index.php?controller=AdminGroups&amp;token=4bf22f42bd14e66af73f0d59a15e381b">
+									Groups								</a>
+							</li>
+																											<li id="subtab-AdminCarts" >
+								<a href="index.php?controller=AdminCarts&amp;token=d6895a41adad27b3eef5f0b076764a9e">
+									Shopping Carts								</a>
+							</li>
+																											<li id="subtab-AdminCustomerThreads" >
+								<a href="index.php?controller=AdminCustomerThreads&amp;token=c7b019c6ec75973a3509d6b2344f0ec3">
+									Customer Service								</a>
+							</li>
+																											<li id="subtab-AdminContacts" >
+								<a href="index.php?controller=AdminContacts&amp;token=6d0a120cad2925dffb20c69fb6343b4a">
+									Contacts								</a>
+							</li>
+																											<li id="subtab-AdminGenders" >
+								<a href="index.php?controller=AdminGenders&amp;token=55194a7c7d33f2502f9eaeffa2d627ce">
+									Titles								</a>
+							</li>
+																											<li id="subtab-AdminOutstanding" >
+								<a href="index.php?controller=AdminOutstanding&amp;token=eeb4728fae723e8fd54602089cd42506">
+									Outstanding								</a>
+							</li>
+																			</ul>
+									</li>
+															<li class="maintab  has_submenu" id="maintab-AdminPriceRule" data-submenu="12">
+					<a href="index.php?controller=AdminCartRules&amp;token=708175a8a0f801fb6ad63ccdf302ee96" class="title" >
+						<i class="icon-AdminPriceRule"></i>
+						<span>Price Rules</span>
+					</a>
+											<ul class="submenu">
+																				<li id="subtab-AdminCartRules" >
+								<a href="index.php?controller=AdminCartRules&amp;token=708175a8a0f801fb6ad63ccdf302ee96">
+									Cart Rules								</a>
+							</li>
+																											<li id="subtab-AdminSpecificPriceRule" >
+								<a href="index.php?controller=AdminSpecificPriceRule&amp;token=44db40f708fd2a7042f747b750a26216">
+									Catalog Price Rules								</a>
+							</li>
+																											<li id="subtab-AdminMarketing" >
+								<a href="index.php?controller=AdminMarketing&amp;token=10b6045d99b465872da8cfcbece4bd39">
+									Marketing								</a>
+							</li>
+																			</ul>
+									</li>
+															<li class="maintab  has_submenu" id="maintab-AdminParentModules" data-submenu="13">
+					<a href="index.php?controller=AdminModules&amp;token=b689878a6ce84642e3e4267977956ceb" class="title" >
+						<i class="icon-AdminParentModules"></i>
+						<span>Modules</span>
+					</a>
+											<ul class="submenu">
+																				<li id="subtab-AdminModules" >
+								<a href="index.php?controller=AdminModules&amp;token=b689878a6ce84642e3e4267977956ceb">
+									Modules								</a>
+							</li>
+																											<li id="subtab-AdminAddonsCatalog" >
+								<a href="index.php?controller=AdminAddonsCatalog&amp;token=bc75ddf7a8e1cc883d65136264c7eec6">
+									Modules &amp; Themes Catalog								</a>
+							</li>
+																											<li id="subtab-AdminModulesPositions" >
+								<a href="index.php?controller=AdminModulesPositions&amp;token=53322a2d083a990868a3054305810ccf">
+									Positions								</a>
+							</li>
+																											<li id="subtab-AdminPayment" >
+								<a href="index.php?controller=AdminPayment&amp;token=bb7a6700186d4cee98e7ccb59bc35d0a">
+									Payment								</a>
+							</li>
+																			</ul>
+									</li>
+															<li class="maintab  has_submenu" id="maintab-AdminParentShipping" data-submenu="14">
+					<a href="index.php?controller=AdminCarriers&amp;token=5d9bc230d486484a54e3461abf0ebc94" class="title" >
+						<i class="icon-AdminParentShipping"></i>
+						<span>Shipping</span>
+					</a>
+											<ul class="submenu">
+																				<li id="subtab-AdminCarriers" >
+								<a href="index.php?controller=AdminCarriers&amp;token=5d9bc230d486484a54e3461abf0ebc94">
+									Carriers								</a>
+							</li>
+																											<li id="subtab-AdminShipping" >
+								<a href="index.php?controller=AdminShipping&amp;token=b6b4766b1d7570ecbbd050b9f18f0d2f">
+									Preferences								</a>
+							</li>
+																			</ul>
+									</li>
+															<li class="maintab  has_submenu" id="maintab-AdminParentLocalization" data-submenu="15">
+					<a href="index.php?controller=AdminLocalization&amp;token=65c53057b0d23a9dc6b20e684bbb9bac" class="title" >
+						<i class="icon-AdminParentLocalization"></i>
+						<span>Localization</span>
+					</a>
+											<ul class="submenu">
+																				<li id="subtab-AdminLocalization" >
+								<a href="index.php?controller=AdminLocalization&amp;token=65c53057b0d23a9dc6b20e684bbb9bac">
+									Localization								</a>
+							</li>
+																											<li id="subtab-AdminLanguages" >
+								<a href="index.php?controller=AdminLanguages&amp;token=3fe8f5729b843a7a76d88bfd7499490e">
+									Languages								</a>
+							</li>
+																											<li id="subtab-AdminZones" >
+								<a href="index.php?controller=AdminZones&amp;token=c4e86fc22f063680c5a52c924342c474">
+									Zones								</a>
+							</li>
+																											<li id="subtab-AdminCountries" >
+								<a href="index.php?controller=AdminCountries&amp;token=c5469af1109b43aa3a321f2a2926979a">
+									Countries								</a>
+							</li>
+																											<li id="subtab-AdminStates" >
+								<a href="index.php?controller=AdminStates&amp;token=e82a9cf7117c29a9b4519f9a48811af1">
+									States								</a>
+							</li>
+																											<li id="subtab-AdminCurrencies" >
+								<a href="index.php?controller=AdminCurrencies&amp;token=73d75e17c1755dbd7af8dd4cea6562ef">
+									Currencies								</a>
+							</li>
+																											<li id="subtab-AdminTaxes" >
+								<a href="index.php?controller=AdminTaxes&amp;token=f10d711a9fcf0b67c2b9d957b99e2a5f">
+									Taxes								</a>
+							</li>
+																											<li id="subtab-AdminTaxRulesGroup" >
+								<a href="index.php?controller=AdminTaxRulesGroup&amp;token=8c5de6ed09a00d197550c5e61664cf1f">
+									Tax Rules								</a>
+							</li>
+																											<li id="subtab-AdminTranslations" >
+								<a href="index.php?controller=AdminTranslations&amp;token=ebcdd09969bec5cac5170c6c67562975">
+									Translations								</a>
+							</li>
+																			</ul>
+									</li>
+															<li class="maintab  has_submenu" id="maintab-AdminParentPreferences" data-submenu="16">
+					<a href="index.php?controller=AdminPreferences&amp;token=a2ec4740917e590718e168db56c1001e" class="title" >
+						<i class="icon-AdminParentPreferences"></i>
+						<span>Preferences</span>
+					</a>
+											<ul class="submenu">
+																				<li id="subtab-AdminPreferences" >
+								<a href="index.php?controller=AdminPreferences&amp;token=a2ec4740917e590718e168db56c1001e">
+									General								</a>
+							</li>
+																											<li id="subtab-AdminOrderPreferences" >
+								<a href="index.php?controller=AdminOrderPreferences&amp;token=f61045fe24a0b47f57aff28b62553034">
+									Orders								</a>
+							</li>
+																											<li id="subtab-AdminPPreferences" >
+								<a href="index.php?controller=AdminPPreferences&amp;token=d9e09a8a6555fddc358f79e1011d0c4d">
+									Products								</a>
+							</li>
+																											<li id="subtab-AdminCustomerPreferences" >
+								<a href="index.php?controller=AdminCustomerPreferences&amp;token=954ea981c279682ff5f43a916ebda59f">
+									Customers								</a>
+							</li>
+																											<li id="subtab-AdminThemes" >
+								<a href="index.php?controller=AdminThemes&amp;token=ac3f478833a056d57d7657791da64db8">
+									Themes								</a>
+							</li>
+																											<li id="subtab-AdminMeta" >
+								<a href="index.php?controller=AdminMeta&amp;token=d59152d007df6f4a5e1f19192c04aa4b">
+									SEO &amp; URLs								</a>
+							</li>
+																											<li id="subtab-AdminCmsContent" >
+								<a href="index.php?controller=AdminCmsContent&amp;token=b5d04f99f2f9aebaa90948afddc22823">
+									CMS								</a>
+							</li>
+																											<li id="subtab-AdminImages" >
+								<a href="index.php?controller=AdminImages&amp;token=74aac49b8f074b0758ae8e94f539725b">
+									Images								</a>
+							</li>
+																											<li id="subtab-AdminStores" >
+								<a href="index.php?controller=AdminStores&amp;token=01ed17cfeadac357825b8f24aa89b0b5">
+									Store Contacts								</a>
+							</li>
+																											<li id="subtab-AdminSearchConf" >
+								<a href="index.php?controller=AdminSearchConf&amp;token=8b252dd49d0a5bd3143722d1e9610a16">
+									Search								</a>
+							</li>
+																											<li id="subtab-AdminMaintenance" >
+								<a href="index.php?controller=AdminMaintenance&amp;token=8c618c6f4801c5a7d0601aaf322a6caa">
+									Maintenance								</a>
+							</li>
+																											<li id="subtab-AdminGeolocation" >
+								<a href="index.php?controller=AdminGeolocation&amp;token=35222be09c1b1c8b606e03aab073c855">
+									Geolocation								</a>
+							</li>
+																			</ul>
+									</li>
+															<li class="maintab  has_submenu" id="maintab-AdminTools" data-submenu="17">
+					<a href="index.php?controller=AdminInformation&amp;token=00c982ce5a01c8fed9ab44ce1dc94eaf" class="title" >
+						<i class="icon-AdminTools"></i>
+						<span>Advanced Parameters</span>
+					</a>
+											<ul class="submenu">
+																				<li id="subtab-AdminInformation" >
+								<a href="index.php?controller=AdminInformation&amp;token=00c982ce5a01c8fed9ab44ce1dc94eaf">
+									Configuration Information								</a>
+							</li>
+																											<li id="subtab-AdminPerformance" >
+								<a href="index.php?controller=AdminPerformance&amp;token=c6b1aa36bbd994b025aad9a2f57d73f8">
+									Performance								</a>
+							</li>
+																											<li id="subtab-AdminEmails" >
+								<a href="index.php?controller=AdminEmails&amp;token=eba2cce74dbf7ece7936903856218ba2">
+									E-mail								</a>
+							</li>
+																											<li id="subtab-AdminShopGroup" >
+								<a href="index.php?controller=AdminShopGroup&amp;token=0d9b87a2131d936453b124450215c605">
+									Multistore								</a>
+							</li>
+																											<li id="subtab-AdminImport" >
+								<a href="index.php?controller=AdminImport&amp;token=090a77dd6d31b1a47a94991eb501227f">
+									CSV Import								</a>
+							</li>
+																											<li id="subtab-AdminBackup" >
+								<a href="index.php?controller=AdminBackup&amp;token=1b65218ca92cfd58c753a503aad5c988">
+									DB Backup								</a>
+							</li>
+																											<li id="subtab-AdminRequestSql" >
+								<a href="index.php?controller=AdminRequestSql&amp;token=d1df92b29cf8b395d5bcb180bda0b89f">
+									SQL Manager								</a>
+							</li>
+																											<li id="subtab-AdminLogs" >
+								<a href="index.php?controller=AdminLogs&amp;token=1922e24c3d4a5d6ad61d3a950f7b9d4d">
+									Logs								</a>
+							</li>
+																											<li id="subtab-AdminWebservice" >
+								<a href="index.php?controller=AdminWebservice&amp;token=395ae95354f8d57bdd54094d9882dedf">
+									Webservice								</a>
+							</li>
+																											<li id="subtab-AdminSelfUpgrade" >
+								<a href="index.php?controller=AdminSelfUpgrade&amp;token=5e5dd94e3cf5f146114b21e2af79c3b2">
+									1-Click Upgrade								</a>
+							</li>
+																			</ul>
+									</li>
+															<li class="maintab  has_submenu" id="maintab-AdminAdmin" data-submenu="18">
+					<a href="index.php?controller=AdminAdminPreferences&amp;token=c87f1bcdd0961e46b958792d82b3cb7c" class="title" >
+						<i class="icon-AdminAdmin"></i>
+						<span>Administration</span>
+					</a>
+											<ul class="submenu">
+																				<li id="subtab-AdminAdminPreferences" >
+								<a href="index.php?controller=AdminAdminPreferences&amp;token=c87f1bcdd0961e46b958792d82b3cb7c">
+									Preferences								</a>
+							</li>
+																											<li id="subtab-AdminQuickAccesses" >
+								<a href="index.php?controller=AdminQuickAccesses&amp;token=721d6ab0568ceb3756355fbb78673297">
+									Quick Access								</a>
+							</li>
+																											<li id="subtab-AdminEmployees" >
+								<a href="index.php?controller=AdminEmployees&amp;token=df42b73b738a1eaefad39628cafc55a6">
+									Employees								</a>
+							</li>
+																											<li id="subtab-AdminProfiles" >
+								<a href="index.php?controller=AdminProfiles&amp;token=df92227d14c4b05c8ffc412545a24b41">
+									Profiles								</a>
+							</li>
+																											<li id="subtab-AdminAccess" >
+								<a href="index.php?controller=AdminAccess&amp;token=91faf2162db3159d545e82fb2fa1369f">
+									Permissions								</a>
+							</li>
+																											<li id="subtab-AdminTabs" >
+								<a href="index.php?controller=AdminTabs&amp;token=707ac37c4e747740c9c4621b5b4c49ea">
+									Menus								</a>
+							</li>
+																			</ul>
+									</li>
+															<li class="maintab  has_submenu" id="maintab-AdminParentStats" data-submenu="19">
+					<a href="index.php?controller=AdminStats&amp;token=1df0f76766610d37583e3596f296b884" class="title" >
+						<i class="icon-AdminParentStats"></i>
+						<span>Stats</span>
+					</a>
+											<ul class="submenu">
+																				<li id="subtab-AdminStats" >
+								<a href="index.php?controller=AdminStats&amp;token=1df0f76766610d37583e3596f296b884">
+									Stats								</a>
+							</li>
+																											<li id="subtab-AdminSearchEngines" >
+								<a href="index.php?controller=AdminSearchEngines&amp;token=0ed2c9f60c55dbe077d1abe739e0864f">
+									Search Engines								</a>
+							</li>
+																											<li id="subtab-AdminReferrers" >
+								<a href="index.php?controller=AdminReferrers&amp;token=0e168fb62339dd56f6a311f5b7d3812f">
+									Referrers								</a>
+							</li>
+																			</ul>
+									</li>
+															<li class="maintab  has_submenu" id="maintab-AdminSmartBlog" data-submenu="115">
+					<a href="index.php?controller=AdminBlogCategory&amp;token=1e7aaa9719b6a919a6b211655d9da289" class="title" >
+						<i class="icon-AdminSmartBlog"></i>
+						<span>Smart Blog</span>
+					</a>
+											<ul class="submenu">
+																				<li id="subtab-AdminBlogCategory" >
+								<a href="index.php?controller=AdminBlogCategory&amp;token=1e7aaa9719b6a919a6b211655d9da289">
+									Blog Category								</a>
+							</li>
+																											<li id="subtab-AdminBlogcomment" >
+								<a href="index.php?controller=AdminBlogcomment&amp;token=2caea53548794191716853d687f88644">
+									Blog Comments								</a>
+							</li>
+																											<li id="subtab-AdminBlogPost" >
+								<a href="index.php?controller=AdminBlogPost&amp;token=f2c20e069a5d85fdf7228b07e24fa54e">
+									Blog Post								</a>
+							</li>
+																											<li id="subtab-AdminImageType" >
+								<a href="index.php?controller=AdminImageType&amp;token=160cef268d1cf6f01cc5a14dc5dd6ab1">
+									Image Type								</a>
+							</li>
+																			</ul>
+									</li>
+									</ul>
+		<span class="menu-collapse">
+			<i class="icon-align-justify"></i>
+		</span>
+	</nav>
+</div>
+
+		<div id="content" class="bootstrap">
+			
+
+	
+<div class="bootstrap">
+	<div class="page-head">
+		
+		<h2 class="page-title">
+			
+			Dashboard		</h2>
+		
+
+		
+		<ul class="breadcrumb page-breadcrumb">
+
+			
+							<li class="breadcrumb-multishop">
+					<select class="shopList" onchange="location.href = '/apanel/index.php?controller=AdminDashboard&amp;token=79c48ec376a405004329484a488294c8&amp;setShopContext='+$(this).val();"><option value="" class="first">All shops</option><option class="group" value="g-1">Group Default</option><option value="s-6" class="shop">belgachaises.be</option><option value="s-4" class="shop">belgachaises.fr</option><option value="s-7" class="shop">belgameubelen.be</option><option value="s-5" class="shop">belgasthule.de</option><option value="s-3" class="shop">belgastoelen.be</option><option value="s-1" class="shop">belgastoelen.nl</option></select>
+				</li>
+			
+			
+			
+			
+							<li class="breadcrumb-current">
+					<a href="/apanel/index.php?controller=AdminDashboard&amp;token=79c48ec376a405004329484a488294c8">					<i class="icon-AdminDashboard"></i>					Dashboard
+					</a>				</li>
+			
+			
+			
+			</ul>
+		
+		
+		<div class="page-bar toolbarBox">
+			<div class="btn-toolbar">
+				<a href="#" class="toolbar_btn dropdown-toolbar navbar-toggle" data-toggle="collapse" data-target="#toolbar-nav"><i class="process-icon-dropdown"></i><span>Menu</span></a>
+				<ul id="toolbar-nav" class="nav nav-pills pull-right collapse navbar-collapse">
+																				<li>
+						<a class="toolbar_btn btn-help" href="http://help.prestashop.com/en/doc/AdminDashboard?version=1.6.0.14&amp;country=en" title="Help">
+							<i class="process-icon-help"></i>
+							<div>Help</div>
+						</a>
+					</li>
+									</ul>
+							</div>
+		</div>
+		
+	</div>
+</div>
+			<div class="modal fade" id="modules_list_container">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h3 class="modal-title">Recommended Modules</h3>
+			</div>
+			<div class="modal-body">
+				<div id="modules_list_container_tab_modal" style="display:none;"></div>
+				<div id="modules_list_loader"><i class="icon-refresh icon-spin"></i></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div id="ajax_confirmation" class="alert alert-success hide"></div>
+
+<div id="ajaxBox" style="display:none"></div>
+
+
+<div class="row">
+	<div class="col-lg-12">
+					<script>
+	var dashboard_ajax_url = 'index.php?controller=AdminDashboard&token=79c48ec376a405004329484a488294c8';
+	var adminstats_ajax_url = 'index.php?controller=AdminStats&token=1df0f76766610d37583e3596f296b884';
+	var no_results_translation = 'No result';
+	var dashboard_use_push = '0';
+	var read_more = 'Read more';
+</script>
+<div id="dashboard">
+	<div class="row">
+		<div class="col-lg-12">
+			<div id="calendar" class="panel">
+				<form action="#" method="post" id="calendar_form" name="calendar_form" class="form-inline">
+					<div class="btn-group">
+						<button type="button" name="submitDateDay" class="btn btn-default submitDateDay">
+							Day
+						</button>
+						<button type="button" name="submitDateMonth" class="btn btn-default submitDateMonth">
+							Month
+						</button>
+						<button type="button" name="submitDateYear" class="btn btn-default submitDateYear">
+							Year
+						</button>
+						<button type="button" name="submitDateDayPrev" class="btn btn-default submitDateDayPrev">
+							Day-1
+						</button>
+						<button type="button" name="submitDateMonthPrev" class="btn btn-default submitDateMonthPrev">
+							Month-1
+						</button>
+						<button type="button" name="submitDateYearPrev" class="btn btn-default submitDateYearPrev">
+							Year-1
+						</button>
+						<!--
+						<button type="submit" name="submitDateRealTime" class="hide btn btn-default submitDateRealTime " value="1">
+							Real Time
+						</button> -->
+					</div>
+					<input type="hidden" name="datepickerFrom" id="datepickerFrom" value="2017-11-25" class="form-control">
+					<input type="hidden" name="datepickerTo" id="datepickerTo" value="2017-12-25" class="form-control">
+					<input type="hidden" name="preselectDateRange" id="preselectDateRange" value="" class="form-control">
+					<div class="form-group pull-right">
+						<button id="datepickerExpand" class="btn btn-default" type="button">
+							<i class="icon-calendar-empty"></i>
+							<span class="hidden-xs">
+								From
+								<strong class="text-info" id="datepicker-from-info">2017-11-25</strong>
+								To
+								<strong class="text-info" id="datepicker-to-info">2017-12-25</strong>
+								<strong class="text-info" id="datepicker-diff-info"></strong>
+							</span>
+							<i class="icon-caret-down"></i>
+						</button>
+					</div>
+					<div id="datepicker" class="row row-padding-top hide">
+	<div class="col-lg-12">
+		<div class="daterangepicker-days">
+			<div class="row">
+								<div class="col-sm-6 col-lg-4">
+					<div class="datepicker1" data-date="2017-11-25" data-date-format="Y-mm-dd"></div>
+				</div>
+				<div class="col-sm-6 col-lg-4">
+					<div class="datepicker2" data-date="2017-12-25" data-date-format="Y-mm-dd"></div>
+				</div>
+								<div class="col-xs-12 col-sm-6 col-lg-4 pull-right">
+					<div id='datepicker-form' class='form-inline'>
+						<div id='date-range' class='form-date-group'>
+							<div  class='form-date-heading'>
+								<span class="title">Date range</span>
+															</div>
+							<div class='form-date-body'>
+								<label>From</label>
+								<input class='date-input form-control' id='date-start' placeholder='Start' type='text' name="date_from" value="2017-11-25" data-date-format="Y-mm-dd" tabindex="1" />
+								<label>to</label>
+								<input class='date-input form-control' id='date-end' placeholder='End' type='text' name="date_to" value="2017-12-25" data-date-format="Y-mm-dd" tabindex="2" />
+							</div>
+						</div>
+						<div id="date-compare" class='form-date-group'>
+							<div class='form-date-heading'>
+								<span class="checkbox-title">
+									<label >
+										<input type='checkbox' id="datepicker-compare" name="datepicker_compare" tabindex="3">
+										Compare to
+									</label>
+								</span>
+								<select id="compare-options" class="form-control fixed-width-lg pull-right" name="compare_date_option" disabled="disabled">
+									<option value="1" selected="selected" label="Previous period">Previous period</option>
+									<option value="2"  label="Previous Year">Previous year</option>
+									<option value="3"  label="Custom">Custom</option>
+								</select>
+							</div>
+							<div class="form-date-body" id="form-date-body-compare" style="display: none;">
+								<label>From</label>
+								<input id="date-start-compare" class="date-input form-control" type="text" placeholder="Start" name="compare_date_from" value="" data-date-format="Y-mm-dd" tabindex="4" />
+								<label>to</label>
+								<input id="date-end-compare" class="date-input form-control" type="text" placeholder="End" name="compare_date_to" value="" data-date-format="Y-mm-dd"
+								tabindex="5" />
+							</div>
+						</div>
+						<div class='form-date-actions'>
+							<button class='btn btn-link' type='button' id="datepicker-cancel" tabindex="7">
+								<i class='icon-remove'></i>
+								Cancel
+							</button>
+							<button class='btn btn-default pull-right' type='submit' name="submitDateRange" tabindex="6">
+								<i class='icon-ok text-success'></i>
+								Apply
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	translated_dates = {
+		days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+		daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+		daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+		months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+		monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May ', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+	};
+</script>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-lg-3" id="hookDashboardZoneOne">
+			<section id="dashactivity" class="panel widget allow_push">
+	<div class="panel-heading">
+		<i class="icon-time"></i> Activity overview
+		<span class="panel-heading-action">
+			<a class="list-toolbar-btn" href="#" onclick="toggleDashConfig('dashactivity'); return false;" title="Configure">
+				<i class="process-icon-configure"></i>
+			</a>
+			<a class="list-toolbar-btn" href="#" onclick="refreshDashboard('dashactivity'); return false;" title="Refresh">
+				<i class="process-icon-refresh"></i>
+			</a>
+		</span>
+	</div>
+	<section id="dashactivity_config" class="dash_config hide">
+		<header><i class="icon-wrench"></i> Configuration</header>
+		
+
+<form id="module_form" class="defaultForm form-horizontal" method="post" enctype="multipart/form-data" novalidate>
+				<input type="hidden" name="submitDashConfig" value="1" />
+				
+				<div class="panel" id="fieldset_0">
+											
+												<div class="form-wrapper">
+											
+						<div class="form-group">
+													
+																	<label class="control-label col-lg-3">
+																				<span class="label-tooltip" data-toggle="tooltip" data-html="true" title="													How long (in minutes) a cart is to be considered as active after the last recorded change (default: 30 min).
+												">
+																				Active cart
+																				</span>
+																			</label>
+															
+
+							
+								<div class="col-lg-9 ">
+								
+																											<select name="DASHACTIVITY_CART_ACTIVE"
+												class=" fixed-width-xl"
+												id="DASHACTIVITY_CART_ACTIVE"
+																																				>
+																																																													<option value="15"
+																																																												>15</option>
+
+																																																				<option value="30"
+																																																selected="selected"
+																																													>30</option>
+
+																																																				<option value="45"
+																																																												>45</option>
+
+																																																				<option value="60"
+																																																												>60</option>
+
+																																																				<option value="90"
+																																																												>90</option>
+
+																																																				<option value="120"
+																																																												>120</option>
+
+																																														</select>
+																									
+								
+																	
+								</div>
+							
+												</div>
+						
+											
+						<div class="form-group">
+													
+																	<label class="control-label col-lg-3">
+																				<span class="label-tooltip" data-toggle="tooltip" data-html="true" title="													How long (in minutes) a visitor is to be considered as online after their last action (default: 30 min).
+												">
+																				Online visitor
+																				</span>
+																			</label>
+															
+
+							
+								<div class="col-lg-9 ">
+								
+																											<select name="DASHACTIVITY_VISITOR_ONLINE"
+												class=" fixed-width-xl"
+												id="DASHACTIVITY_VISITOR_ONLINE"
+																																				>
+																																																													<option value="15"
+																																																												>15</option>
+
+																																																				<option value="30"
+																																																selected="selected"
+																																													>30</option>
+
+																																																				<option value="45"
+																																																												>45</option>
+
+																																																				<option value="60"
+																																																												>60</option>
+
+																																																				<option value="90"
+																																																												>90</option>
+
+																																																				<option value="120"
+																																																												>120</option>
+
+																																														</select>
+																									
+								
+																	
+								</div>
+							
+												</div>
+						
+											
+						<div class="form-group">
+													
+																	<label class="control-label col-lg-3">
+																				<span class="label-tooltip" data-toggle="tooltip" data-html="true" title="													How long (in hours) after the last action a cart is to be considered as abandoned (default: 24 hrs).
+												">
+																				Abandoned cart (min)
+																				</span>
+																			</label>
+															
+
+							
+								<div class="col-lg-9 ">
+								
+																																																									<div class="input-group">
+																																								<input type="text"
+											name="DASHACTIVITY_CART_ABANDONED_MIN"
+											id="DASHACTIVITY_CART_ABANDONED_MIN"
+											value="24"
+											class=""
+																																																																																																			/>
+																				<span class="input-group-addon">
+										  hrs
+										</span>
+										
+																				</div>
+																																													
+								
+																	
+								</div>
+							
+												</div>
+						
+											
+						<div class="form-group">
+													
+																	<label class="control-label col-lg-3">
+																				<span class="label-tooltip" data-toggle="tooltip" data-html="true" title="													How long (in hours) after the last action a cart is no longer to be considered as abandoned (default: 24 hrs).
+												">
+																				Abandoned cart (max)
+																				</span>
+																			</label>
+															
+
+							
+								<div class="col-lg-9 ">
+								
+																																																									<div class="input-group">
+																																								<input type="text"
+											name="DASHACTIVITY_CART_ABANDONED_MAX"
+											id="DASHACTIVITY_CART_ABANDONED_MAX"
+											value="48"
+											class=""
+																																																																																																			/>
+																				<span class="input-group-addon">
+										  hrs
+										</span>
+										
+																				</div>
+																																													
+								
+																	
+								</div>
+							
+												</div>
+						
+										
+																	
+									</div><!-- /.form-wrapper -->
+								
+											
+						
+												<div class="panel-footer">
+												<button type="submit" value="1"	id="module_form_submit_btn" name="submitDashConfig" class="btn btn-default pull-right submit_dash_config">
+							<i class="process-icon-save"></i> Save
+						</button>
+																													</div>
+							
+		</div>
+		
+		
+	</form>
+
+
+
+	<script type="text/javascript">
+		var module_dir = '/modules/';
+		var id_language = 6;
+		var languages = new Array();
+		var vat_number = 0;
+		// Multilang field setup must happen before document is ready so that calls to displayFlags() to avoid
+		// precedence conflicts with other document.ready() blocks
+					languages[0] = {
+				id_lang: 1,
+				iso_code: 'en',
+				name: 'English (English)',
+				is_default: '0'
+			};
+					languages[1] = {
+				id_lang: 2,
+				iso_code: 'de',
+				name: 'Deutsch (German)',
+				is_default: '0'
+			};
+					languages[2] = {
+				id_lang: 5,
+				iso_code: 'fr',
+				name: 'Français (French)',
+				is_default: '0'
+			};
+					languages[3] = {
+				id_lang: 6,
+				iso_code: 'nl',
+				name: 'Nederlands (Dutch)',
+				is_default: '1'
+			};
+				// we need allowEmployeeFormLang var in ajax request
+		allowEmployeeFormLang = 0;
+		displayFlags(languages, id_language, allowEmployeeFormLang);
+
+		$(document).ready(function() {
+
+			$(".show_checkbox").click(function () {
+				$(this).addClass('hidden')
+				$(this).siblings('.checkbox').removeClass('hidden');
+				$(this).siblings('.hide_checkbox').removeClass('hidden');
+				return false;
+			});
+			$(".hide_checkbox").click(function () {
+				$(this).addClass('hidden')
+				$(this).siblings('.checkbox').addClass('hidden');
+				$(this).siblings('.show_checkbox').removeClass('hidden');
+				return false;
+			});
+
+			
+			if ($(".datepicker").length > 0)
+				$(".datepicker").datepicker({
+					prevText: '',
+					nextText: '',
+					dateFormat: 'yy-mm-dd'
+				});
+
+			if ($(".datetimepicker").length > 0)
+			$('.datetimepicker').datetimepicker({
+				prevText: '',
+				nextText: '',
+				dateFormat: 'yy-mm-dd',
+				// Define a custom regional settings in order to use PrestaShop translation tools
+				currentText: 'Now',
+				closeText: 'Done',
+				ampm: false,
+				amNames: ['AM', 'A'],
+				pmNames: ['PM', 'P'],
+				timeFormat: 'hh:mm:ss tt',
+				timeSuffix: '',
+				timeOnlyTitle: 'Choose Time',
+				timeText: 'Time',
+				hourText: 'Hour',
+				minuteText: 'Minute',
+			});
+					});
+	state_token = 'e82a9cf7117c29a9b4519f9a48811af1';
+	
+	</script>
+
+	</section>
+	<section id="dash_live" class="loading">
+		<ul class="data_list_large">
+			<li>
+				<span class="data_label size_l">
+					<a href="index.php?controller=AdminStats&amp;token=1df0f76766610d37583e3596f296b884&amp;module=statslive">Online Visitors</a>
+					<small class="text-muted"><br/>
+						in the last 30 minutes
+					</small>
+				</span>
+				<span class="data_value size_xxl">
+					<span id="online_visitor"></span>
+				</span>
+			</li>
+			<li>
+				<span class="data_label size_l">
+					<a href="index.php?controller=AdminCarts&amp;token=d6895a41adad27b3eef5f0b076764a9e">Active Shopping Carts</a>
+					<small class="text-muted"><br/>
+						in the last 30 minutes
+					</small>
+				</span>
+				<span class="data_value size_xxl">
+					<span id="active_shopping_cart"></span>
+				</span>
+			</li>
+		</ul>
+	</section>
+	<section id="dash_pending" class="loading">
+		<header><i class="icon-time"></i> Currently Pending</header>
+		<ul class="data_list">
+			<li>
+				<span class="data_label"><a href="index.php?controller=AdminOrders&amp;token=774c2441d22e426c966fca52f70b692b">Orders</a></span>
+				<span class="data_value size_l">
+					<span id="pending_orders"></span>
+				</span>
+			</li>
+			<li>
+				<span class="data_label"><a href="index.php?controller=AdminReturn&amp;token=50ee88a8483cc0b7e549743d2f769201">Return/Exchanges</a></span>
+				<span class="data_value size_l">
+					<span id="return_exchanges"></span>
+				</span>
+			</li>
+			<li>
+				<span class="data_label"><a href="index.php?controller=AdminCarts&amp;token=d6895a41adad27b3eef5f0b076764a9e">Abandoned Carts</a></span>
+				<span class="data_value size_l">
+					<span id="abandoned_cart"></span>
+				</span>
+			</li>
+					</ul>
+	</section>
+	<section id="dash_notifications" class="loading">
+		<header><i class="icon-exclamation-sign"></i> Notifications</header>
+		<ul class="data_list_vertical">
+			<li>
+				<span class="data_label"><a href="index.php?controller=AdminCustomerThreads&amp;token=c7b019c6ec75973a3509d6b2344f0ec3">New Messages</a></span>
+				<span class="data_value size_l">
+					<span id="new_messages"></span>
+				</span>
+			</li>
+			<li>
+				<span class="data_label"><a href="index.php?controller=AdminModules&amp;token=b689878a6ce84642e3e4267977956ceb&amp;configure=productcomments&amp;tab_module=front_office_features&amp;module_name=productcomments">Product Reviews</a></span>
+				<span class="data_value size_l">
+					<span id="product_reviews"></span>
+				</span>
+			</li>
+		</ul>
+	</section>
+	<section id="dash_customers" class="loading">
+		<header><i class="icon-user"></i> Customers &amp; Newsletters <span class="subtitle small" id="customers-newsletters-subtitle"></span></header>
+		<ul class="data_list">
+			<li>
+				<span class="data_label"><a href="index.php?controller=AdminCustomers&amp;token=e0269ef52e4786ce2237d373f5247de1">New Customers</a></span>
+				<span class="data_value size_md">
+					<span id="new_customers"></span>
+				</span>
+			</li>
+			<li>
+				<span class="data_label"><a href="index.php?controller=AdminStats&amp;token=1df0f76766610d37583e3596f296b884&amp;module=statsnewsletter">New Subscriptions</a></span>
+				<span class="data_value size_md">
+					<span id="new_registrations"></span>
+				</span>
+			</li>
+			<li>
+				<span class="data_label"><a href="index.php?controller=AdminModules&amp;token=b689878a6ce84642e3e4267977956ceb&amp;configure=blocknewsletter&amp;module_name=blocknewsletter">Total Subscribers</a></span>
+				<span class="data_value size_md">
+					<span id="total_suscribers"></span>
+				</span>
+			</li>
+		</ul>
+	</section>
+	<section id="dash_traffic" class="loading">
+		<header>
+			<i class="icon-globe"></i> Traffic <span class="subtitle small" id="traffic-subtitle"></span>
+		</header>
+		<ul class="data_list">
+							<li>
+					<span class="data_label">
+						<img src="../modules/dashactivity/gapi-logo.gif" width="16" height="16" alt=""/> <a href="index.php?controller=AdminModules&amp;token=b689878a6ce84642e3e4267977956ceb&amp;configure=gapi">Link to your Google Analytics account</a>
+					</span>
+				</li>
+						<li>
+				<span class="data_label"><a href="index.php?controller=AdminStats&amp;token=1df0f76766610d37583e3596f296b884&amp;module=statsforecast">Visits</a></span>
+				<span class="data_value size_md">
+					<span id="visits"></span>
+				</span>
+			</li>
+			<li>
+				<span class="data_label"><a href="index.php?controller=AdminStats&amp;token=1df0f76766610d37583e3596f296b884&amp;module=statsvisits">Unique Visitors</a></span>
+				<span class="data_value size_md">
+					<span id="unique_visitors"></span>
+				</span>
+			</li>
+			<li>
+				<span class="data_label">Traffic Sources</span>
+				<ul class="data_list_small" id="dash_traffic_source">
+				</ul>
+				<div id="dash_traffic_chart2" class='chart with-transitions'>
+					<svg></svg>
+				</div>
+			</li>
+		</ul>
+	</section>
+</section>
+<script type="text/javascript">
+	date_subtitle = "(from %s to %s)";
+	date_format   = "m/d/Y";
+</script>
+
+		</div>
+		<div class="col-md-8 col-lg-7" id="hookDashboardZoneTwo">
+			<div class="clearfix"></div>
+<section id="dashtrends" class="panel widget allow_push">
+	<header class="panel-heading">
+		<i class="icon-bar-chart"></i> Dashboard
+		<span class="panel-heading-action">
+			<a class="list-toolbar-btn" href="index.php?controller=AdminDashboard&amp;token=79c48ec376a405004329484a488294c8&amp;profitability_conf=1" title="Configure">
+				<i class="process-icon-configure"></i>
+			</a>
+			<a class="list-toolbar-btn" href="#" onclick="refreshDashboard('dashtrends'); return false;" title="Refresh">
+				<i class="process-icon-refresh"></i>
+			</a>
+		</span>
+	</header>
+	<div id="dashtrends_toolbar" class="row">
+		<dl class="col-xs-4 col-lg-2 label-tooltip" onclick="selectDashtrendsChart(this, 'sales');" data-toggle="tooltip" data-original-title="Sum of revenue (excl. tax) generated within the date range by orders considered validated." data-placement="bottom">
+				<dt>Sales</dt>
+				<dd class="data_value size_l"><span id="sales_score"></span></dd>
+				<dd class="dash_trend"><span id="sales_score_trends"></span></dd>
+		</dl>
+		<dl class="col-xs-4 col-lg-2 label-tooltip" onclick="selectDashtrendsChart(this, 'orders');" data-toggle="tooltip" data-original-title="Total number of orders received within the date range that are considered validated." data-placement="bottom">
+				<dt>Orders</dt>
+				<dd class="data_value size_l"><span id="orders_score"></span></dd>
+				<dd class="dash_trend"><span id="orders_score_trends"></span></dd>
+		</dl>
+		<dl class="col-xs-4 col-lg-2 label-tooltip" onclick="selectDashtrendsChart(this, 'average_cart_value');" data-toggle="tooltip" data-original-title="Average Cart Value is a metric representing the value of an average order within the date range. It is calculated by dividing Sales by Orders." data-placement="bottom">
+				<dt>Cart Value</dt>
+				<dd class="data_value size_l"><span id="cart_value_score"></span></dd>
+				<dd class="dash_trend"><span id="cart_value_score_trends"></span></dd>
+		</dl>
+		<dl class="col-xs-4 col-lg-2 label-tooltip" onclick="selectDashtrendsChart(this, 'visits');" data-toggle="tooltip" data-original-title="Total number of visits within the date range. A visit is the period of time a user is actively engaged with your website." data-placement="bottom">
+				<dt>Visits</dt>
+				<dd class="data_value size_l"><span id="visits_score"></span></dd>
+				<dd class="dash_trend"><span id="visits_score_trends"></span></dd>
+		</dl>
+		<dl class="col-xs-4 col-lg-2 label-tooltip" onclick="selectDashtrendsChart(this, 'conversion_rate');" data-toggle="tooltip" data-original-title="Ecommerce Conversion Rate is the percentage of visits that resulted in an validated order." data-placement="bottom">
+			<dt>Conversion Rate</dt>
+			<dd class="data_value size_l"><span id="conversion_rate_score"></span></dd>
+			<dd class="dash_trend"><span id="conversion_rate_score_trends"></span></dd>
+		</dl>
+		<dl class="col-xs-4 col-lg-2 label-tooltip" onclick="selectDashtrendsChart(this, 'net_profits');" data-toggle="tooltip" data-original-title="Net profit is a measure of the profitability of a venture after accounting for all Ecommerce costs. You can provide these costs by clicking on the configuration icon right above here." data-placement="bottom">
+				<dt>Net Profit</dt>
+				<dd class="data_value size_l"><span id="net_profits_score"></span></dd>
+				<dd class="dash_trend"><span id="net_profits_score_trends"></span></dd>
+		</dl>
+	</div>
+	<div id="dash_trends_chart1" class="chart with-transitions">
+		<svg></svg>
+	</div>
+</section>
+<div class="clearfix"></div>
+<script>
+	var currency_format = 2;
+	var currency_sign = '€';
+	var currency_blank = 0;
+	var priceDisplayPrecision = 0;
+	var dashgoals_year = 2018;
+	var dashgoals_ajax_link = 'index.php?controller=AdminDashgoals&token=aacca74c9909806d6d31699088698fbe';
+</script>
+
+<section id="dashgoals" class="panel widget">
+	<header class="panel-heading">
+		<i class="icon-bar-chart"></i>
+		Forecast
+		<span id="dashgoals_title" class="badge">2018</span>
+		<span class="btn-group">
+			<a href="javascript:void(0);" onclick="dashgoals_changeYear('backward');" class="btn btn-default btn-xs"><i class="icon-backward"></i></a>
+			<a href="javascript:void(0);" onclick="dashgoals_changeYear('forward');" class="btn btn-default btn-xs"><i class="icon-forward"></i></a>
+		</span>
+		
+		<span class="panel-heading-action">
+			<a class="list-toolbar-btn" href="javascript:void(0);" onclick="toggleDashConfig('dashgoals');" title="Configure">
+				<i class="process-icon-configure"></i>
+			</a>
+			<a class="list-toolbar-btn" href="javascript:void(0);" onclick="refreshDashboard('dashgoals');" title="Refresh">
+				<i class="process-icon-refresh"></i>
+			</a>
+		</span>
+	</header>
+	<section id="dashgoals_config" class="dash_config hide">
+	<header><i class="icon-wrench"></i> Configuration</header>
+	<form class="defaultForm form-horizontal" method="post" action="index.php?controller=AdminDashboard&amp;token=79c48ec376a405004329484a488294c8">
+		<table class="table table-condensed table-striped table-bordered">
+			<thead>
+				<tr>
+					<th class="fixed-width-md">2018</th>
+					<th class="fixed-width-md">Traffic</th>
+					<th class="fixed-width-md">Conversion Rate</th>
+					<th class="fixed-width-lg">Average Cart Value</th>
+					<th>Sales</th>
+				</tr>
+			</thead>
+			<tbody>
+								<tr>
+					<td>
+						January
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_traffic_01_2018" name="dashgoals_traffic_01_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_conversion_01_2018" name="dashgoals_conversion_01_2018" class="dashgoals_config_input form-control"
+								value="0" />
+							<span class="input-group-addon">%</span>
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<span class="input-group-addon">EUR</span>
+							<input id="dashgoals_avg_cart_value_01_2018" name="dashgoals_avg_cart_value_01_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td id="dashgoals_sales_01_2018" class="dashgoals_sales">
+					</td>
+				</tr>
+								<tr>
+					<td>
+						February
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_traffic_02_2018" name="dashgoals_traffic_02_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_conversion_02_2018" name="dashgoals_conversion_02_2018" class="dashgoals_config_input form-control"
+								value="0" />
+							<span class="input-group-addon">%</span>
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<span class="input-group-addon">EUR</span>
+							<input id="dashgoals_avg_cart_value_02_2018" name="dashgoals_avg_cart_value_02_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td id="dashgoals_sales_02_2018" class="dashgoals_sales">
+					</td>
+				</tr>
+								<tr>
+					<td>
+						March
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_traffic_03_2018" name="dashgoals_traffic_03_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_conversion_03_2018" name="dashgoals_conversion_03_2018" class="dashgoals_config_input form-control"
+								value="0" />
+							<span class="input-group-addon">%</span>
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<span class="input-group-addon">EUR</span>
+							<input id="dashgoals_avg_cart_value_03_2018" name="dashgoals_avg_cart_value_03_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td id="dashgoals_sales_03_2018" class="dashgoals_sales">
+					</td>
+				</tr>
+								<tr>
+					<td>
+						April
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_traffic_04_2018" name="dashgoals_traffic_04_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_conversion_04_2018" name="dashgoals_conversion_04_2018" class="dashgoals_config_input form-control"
+								value="0" />
+							<span class="input-group-addon">%</span>
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<span class="input-group-addon">EUR</span>
+							<input id="dashgoals_avg_cart_value_04_2018" name="dashgoals_avg_cart_value_04_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td id="dashgoals_sales_04_2018" class="dashgoals_sales">
+					</td>
+				</tr>
+								<tr>
+					<td>
+						May
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_traffic_05_2018" name="dashgoals_traffic_05_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_conversion_05_2018" name="dashgoals_conversion_05_2018" class="dashgoals_config_input form-control"
+								value="0" />
+							<span class="input-group-addon">%</span>
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<span class="input-group-addon">EUR</span>
+							<input id="dashgoals_avg_cart_value_05_2018" name="dashgoals_avg_cart_value_05_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td id="dashgoals_sales_05_2018" class="dashgoals_sales">
+					</td>
+				</tr>
+								<tr>
+					<td>
+						June
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_traffic_06_2018" name="dashgoals_traffic_06_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_conversion_06_2018" name="dashgoals_conversion_06_2018" class="dashgoals_config_input form-control"
+								value="0" />
+							<span class="input-group-addon">%</span>
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<span class="input-group-addon">EUR</span>
+							<input id="dashgoals_avg_cart_value_06_2018" name="dashgoals_avg_cart_value_06_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td id="dashgoals_sales_06_2018" class="dashgoals_sales">
+					</td>
+				</tr>
+								<tr>
+					<td>
+						July
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_traffic_07_2018" name="dashgoals_traffic_07_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_conversion_07_2018" name="dashgoals_conversion_07_2018" class="dashgoals_config_input form-control"
+								value="0" />
+							<span class="input-group-addon">%</span>
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<span class="input-group-addon">EUR</span>
+							<input id="dashgoals_avg_cart_value_07_2018" name="dashgoals_avg_cart_value_07_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td id="dashgoals_sales_07_2018" class="dashgoals_sales">
+					</td>
+				</tr>
+								<tr>
+					<td>
+						August
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_traffic_08_2018" name="dashgoals_traffic_08_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_conversion_08_2018" name="dashgoals_conversion_08_2018" class="dashgoals_config_input form-control"
+								value="0" />
+							<span class="input-group-addon">%</span>
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<span class="input-group-addon">EUR</span>
+							<input id="dashgoals_avg_cart_value_08_2018" name="dashgoals_avg_cart_value_08_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td id="dashgoals_sales_08_2018" class="dashgoals_sales">
+					</td>
+				</tr>
+								<tr>
+					<td>
+						September
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_traffic_09_2018" name="dashgoals_traffic_09_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_conversion_09_2018" name="dashgoals_conversion_09_2018" class="dashgoals_config_input form-control"
+								value="0" />
+							<span class="input-group-addon">%</span>
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<span class="input-group-addon">EUR</span>
+							<input id="dashgoals_avg_cart_value_09_2018" name="dashgoals_avg_cart_value_09_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td id="dashgoals_sales_09_2018" class="dashgoals_sales">
+					</td>
+				</tr>
+								<tr>
+					<td>
+						October
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_traffic_10_2018" name="dashgoals_traffic_10_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_conversion_10_2018" name="dashgoals_conversion_10_2018" class="dashgoals_config_input form-control"
+								value="0" />
+							<span class="input-group-addon">%</span>
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<span class="input-group-addon">EUR</span>
+							<input id="dashgoals_avg_cart_value_10_2018" name="dashgoals_avg_cart_value_10_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td id="dashgoals_sales_10_2018" class="dashgoals_sales">
+					</td>
+				</tr>
+								<tr>
+					<td>
+						November
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_traffic_11_2018" name="dashgoals_traffic_11_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_conversion_11_2018" name="dashgoals_conversion_11_2018" class="dashgoals_config_input form-control"
+								value="0" />
+							<span class="input-group-addon">%</span>
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<span class="input-group-addon">EUR</span>
+							<input id="dashgoals_avg_cart_value_11_2018" name="dashgoals_avg_cart_value_11_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td id="dashgoals_sales_11_2018" class="dashgoals_sales">
+					</td>
+				</tr>
+								<tr>
+					<td>
+						December
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_traffic_12_2018" name="dashgoals_traffic_12_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<input id="dashgoals_conversion_12_2018" name="dashgoals_conversion_12_2018" class="dashgoals_config_input form-control"
+								value="0" />
+							<span class="input-group-addon">%</span>
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<span class="input-group-addon">EUR</span>
+							<input id="dashgoals_avg_cart_value_12_2018" name="dashgoals_avg_cart_value_12_2018" class="dashgoals_config_input form-control"
+								value="0" />
+						</div>
+					</td>
+					<td id="dashgoals_sales_12_2018" class="dashgoals_sales">
+					</td>
+				</tr>
+							</tbody>
+		</table>
+		<div class="panel-footer">
+			<button class="btn btn-default pull-right" name="submitDashGoals" type="submit"><i class="process-icon-save"></i> Save</button>
+		</div>
+	</form>
+</section>
+	<section class="loading">
+		<div class="btn-group" data-toggle="buttons">
+			<label class="btn btn-default">
+				<input type="radio" name="options" onchange="selectDashgoalsChart('traffic');"/><i class="icon-circle" style="color:#9E5BA1"></i> Traffic
+			</label>
+			<label class="btn btn-default">
+				<input type="radio" name="options" onchange="selectDashgoalsChart('conversion');"/><i class="icon-circle" style="color:#00A89C"></i> Conversion
+			</label>
+			<label class="btn btn-default">
+				<input type="radio" name="options" onchange="selectDashgoalsChart('avg_cart_value');"/><i class="icon-circle" style="color:#3AC4ED"></i> Average Cart Value
+			</label>
+			<label class="btn btn-default active">
+				<input type="radio" name="options" onchange="selectDashgoalsChart('sales');"/><i class="icon-circle" style="color:#F99031"></i> Sales
+			</label>
+		</div>
+		<div id="dash_goals_chart1" class="chart with-transitions">
+			<svg></svg>
+		</div>
+	</section>
+</section>
+<section id="dashproducts" class="panel widget  allow_push">
+	<header class="panel-heading">
+		<i class="icon-bar-chart"></i> Products and Sales
+		<span class="panel-heading-action">
+			<a class="list-toolbar-btn" href="#" onclick="toggleDashConfig('dashproducts'); return false;" title="Configure">
+				<i class="process-icon-configure"></i>
+			</a>
+			<a class="list-toolbar-btn" href="#"  onclick="refreshDashboard('dashproducts'); return false;"  title="Refresh">
+				<i class="process-icon-refresh"></i>
+			</a>
+		</span>
+	</header>
+
+	<section id="dashproducts_config" class="dash_config hide">
+		<header><i class="icon-wrench"></i> Configuration</header>
+		
+
+<form id="module_form_1" class="defaultForm form-horizontal" method="post" enctype="multipart/form-data" novalidate>
+				<input type="hidden" name="submitDashConfig" value="1" />
+				
+				<div class="panel" id="fieldset_0_1_1">
+												<div class="form-wrapper">
+											
+						<div class="form-group">
+													
+																	<label class="control-label col-lg-3">
+																				Number of &quot;Recent Orders&quot; to display
+																			</label>
+															
+
+							
+								<div class="col-lg-9 ">
+								
+																											<select name="DASHPRODUCT_NBR_SHOW_LAST_ORDER"
+												class=" fixed-width-xl"
+												id="DASHPRODUCT_NBR_SHOW_LAST_ORDER"
+																																				>
+																																																													<option value="5"
+																																																												>5</option>
+
+																																																				<option value="10"
+																																																selected="selected"
+																																													>10</option>
+
+																																																				<option value="20"
+																																																												>20</option>
+
+																																																				<option value="50"
+																																																												>50</option>
+
+																																														</select>
+																									
+								
+																	
+								</div>
+							
+												</div>
+						
+											
+						<div class="form-group">
+													
+																	<label class="control-label col-lg-3">
+																				Number of &quot;Best Sellers&quot; to display
+																			</label>
+															
+
+							
+								<div class="col-lg-9 ">
+								
+																											<select name="DASHPRODUCT_NBR_SHOW_BEST_SELLER"
+												class=" fixed-width-xl"
+												id="DASHPRODUCT_NBR_SHOW_BEST_SELLER"
+																																				>
+																																																													<option value="5"
+																																																												>5</option>
+
+																																																				<option value="10"
+																																																selected="selected"
+																																													>10</option>
+
+																																																				<option value="20"
+																																																												>20</option>
+
+																																																				<option value="50"
+																																																												>50</option>
+
+																																														</select>
+																									
+								
+																	
+								</div>
+							
+												</div>
+						
+											
+						<div class="form-group">
+													
+																	<label class="control-label col-lg-3">
+																				Number of &quot;Most Viewed&quot; to display
+																			</label>
+															
+
+							
+								<div class="col-lg-9 ">
+								
+																											<select name="DASHPRODUCT_NBR_SHOW_MOST_VIEWED"
+												class=" fixed-width-xl"
+												id="DASHPRODUCT_NBR_SHOW_MOST_VIEWED"
+																																				>
+																																																													<option value="5"
+																																																												>5</option>
+
+																																																				<option value="10"
+																																																selected="selected"
+																																													>10</option>
+
+																																																				<option value="20"
+																																																												>20</option>
+
+																																																				<option value="50"
+																																																												>50</option>
+
+																																														</select>
+																									
+								
+																	
+								</div>
+							
+												</div>
+						
+											
+						<div class="form-group">
+													
+																	<label class="control-label col-lg-3">
+																				Number of &quot;Top Searches&quot; to display
+																			</label>
+															
+
+							
+								<div class="col-lg-9 ">
+								
+																											<select name="DASHPRODUCT_NBR_SHOW_TOP_SEARCH"
+												class=" fixed-width-xl"
+												id="DASHPRODUCT_NBR_SHOW_TOP_SEARCH"
+																																				>
+																																																													<option value="5"
+																																																												>5</option>
+
+																																																				<option value="10"
+																																																selected="selected"
+																																													>10</option>
+
+																																																				<option value="20"
+																																																												>20</option>
+
+																																																				<option value="50"
+																																																												>50</option>
+
+																																														</select>
+																									
+								
+																	
+								</div>
+							
+												</div>
+						
+										
+																	
+									</div><!-- /.form-wrapper -->
+								
+											
+						
+												<div class="panel-footer">
+												<button type="submit" value="1"	id="module_form_submit_btn_1" name="submitDashConfig" class="btn btn-default pull-right submit_dash_config">
+							<i class="process-icon-save"></i>    Save   
+						</button>
+																													</div>
+							
+		</div>
+		
+		
+	</form>
+
+
+
+	<script type="text/javascript">
+		var module_dir = '/modules/';
+		var id_language = 6;
+		var languages = new Array();
+		var vat_number = 0;
+		// Multilang field setup must happen before document is ready so that calls to displayFlags() to avoid
+		// precedence conflicts with other document.ready() blocks
+					languages[0] = {
+				id_lang: 1,
+				iso_code: 'en',
+				name: 'English (English)',
+				is_default: '0'
+			};
+					languages[1] = {
+				id_lang: 2,
+				iso_code: 'de',
+				name: 'Deutsch (German)',
+				is_default: '0'
+			};
+					languages[2] = {
+				id_lang: 5,
+				iso_code: 'fr',
+				name: 'Français (French)',
+				is_default: '0'
+			};
+					languages[3] = {
+				id_lang: 6,
+				iso_code: 'nl',
+				name: 'Nederlands (Dutch)',
+				is_default: '1'
+			};
+				// we need allowEmployeeFormLang var in ajax request
+		allowEmployeeFormLang = 0;
+		displayFlags(languages, id_language, allowEmployeeFormLang);
+
+		$(document).ready(function() {
+
+			$(".show_checkbox").click(function () {
+				$(this).addClass('hidden')
+				$(this).siblings('.checkbox').removeClass('hidden');
+				$(this).siblings('.hide_checkbox').removeClass('hidden');
+				return false;
+			});
+			$(".hide_checkbox").click(function () {
+				$(this).addClass('hidden')
+				$(this).siblings('.checkbox').addClass('hidden');
+				$(this).siblings('.show_checkbox').removeClass('hidden');
+				return false;
+			});
+
+			
+			if ($(".datepicker").length > 0)
+				$(".datepicker").datepicker({
+					prevText: '',
+					nextText: '',
+					dateFormat: 'yy-mm-dd'
+				});
+
+			if ($(".datetimepicker").length > 0)
+			$('.datetimepicker').datetimepicker({
+				prevText: '',
+				nextText: '',
+				dateFormat: 'yy-mm-dd',
+				// Define a custom regional settings in order to use PrestaShop translation tools
+				currentText: 'Now',
+				closeText: 'Done',
+				ampm: false,
+				amNames: ['AM', 'A'],
+				pmNames: ['PM', 'P'],
+				timeFormat: 'hh:mm:ss tt',
+				timeSuffix: '',
+				timeOnlyTitle: 'Choose Time',
+				timeText: 'Time',
+				hourText: 'Hour',
+				minuteText: 'Minute',
+			});
+					});
+	state_token = 'e82a9cf7117c29a9b4519f9a48811af1';
+	
+	</script>
+
+	</section>
+
+	<section>
+		<nav>
+			<ul class="nav nav-pills">
+				<li class="active">
+					<a href="#dash_recent_orders" data-toggle="tab">
+						<i class="icon-fire"></i>
+						<span class="hidden-inline-xs">Recent Orders</span>
+					</a>
+				</li>
+				<li>
+					<a href="#dash_best_sellers" data-toggle="tab">
+						<i class="icon-trophy"></i>
+						<span class="hidden-inline-xs">Best Sellers</span>
+					</a>
+				</li>
+				<li>
+					<a href="#dash_most_viewed" data-toggle="tab">
+						<i class="icon-eye-open"></i>
+						<span class="hidden-inline-xs">Most Viewed</span>
+					</a>
+				</li>
+				<li>
+					<a href="#dash_top_search" data-toggle="tab">
+						<i class="icon-search"></i>
+						<span class="hidden-inline-xs">Top Searches</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="tab-content panel">
+			<div class="tab-pane active" id="dash_recent_orders">
+				<h3>Last 10 orders</h3>
+				<div class="table-responsive">
+					<table class="table data_table" id="table_recent_orders">
+						<thead></thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+			<div class="tab-pane" id="dash_best_sellers">
+				<h3>
+					Top 10 products
+					<span>From 11/25/2017 to 12/25/2017</span>
+				</h3>
+				<div class="table-responsive">
+					<table class="table data_table" id="table_best_sellers">
+						<thead></thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+			<div class="tab-pane" id="dash_most_viewed">
+				<h3>
+					Most Viewed
+					<span>From 11/25/2017 to 12/25/2017</span>
+				</h3>
+				<div class="table-responsive">
+					<table class="table data_table" id="table_most_viewed">
+						<thead></thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+			<div class="tab-pane" id="dash_top_search">
+				<h3>
+					Top 10 most search terms
+					<span>From 11/25/2017 to 12/25/2017</span>
+				</h3>
+				<div class="table-responsive">
+					<table class="table data_table" id="table_top_10_most_search">
+						<thead></thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	</section>
+</section>
+
+			<div id="dashaddons" class="row-margin-bottom">
+				<a href="http://addons.prestashop.com/en/209-dashboards?utm_source=back-office&amp;utm_medium=dashboard&amp;utm_campaign=back-office-EN&amp;utm_content=download" class="_blank">
+					<i class="icon-plus"></i> Add more dashboard modules
+				</a>
+			</div>
+		</div>
+		<div class="col-md-12 col-lg-2">
+			<section class="dash_news panel">
+				<h3><i class="icon-rss"></i> PrestaShop News</h3>
+				<div class="dash_news_content"></div>
+				<div class="text-center"><h4><a href="http://www.prestashop.com/blog/" onclick="return !window.open(this.href);">Find more news</a></h4></div>
+			</section>
+			<section id="dash_version" class="visible-lg">
+				<iframe style="overflow:hidden;border:none" src="http://api.prestashop.com/version/check_version.php?v=1.6.0.14&amp;lang=en&amp;autoupgrade=1&amp;hosted_mode=0" ></iframe>
+			</section>
+			<section class="dash_links panel">
+				<h3><i class="icon-link"></i> Useful links</h3>
+					<dl>
+						<dt><a href="http://doc.prestashop.com/display/PS16?utm_source=back-office&amp;utm_medium=dashboard&amp;utm_campaign=back-office-EN&amp;utm_content=download" class="_blank">Official Documentation</a></dt>
+						<dd>User, Developer and Designer Guides</dd>
+					</dl>
+					<dl>
+						<dt><a href="http://www.prestashop.com/forums?utm_source=back-office&amp;utm_medium=dashboard&amp;utm_campaign=back-office-EN&amp;utm_content=download" class="_blank">PrestaShop Forum</a></dt>
+						<dd>Connect with the PrestaShop community</dd>
+					</dl>
+					<dl>
+						<dt><a href="http://addons.prestashop.com?utm_source=back-office&amp;utm_medium=dashboard&amp;utm_campaign=back-office-EN&amp;utm_content=download" class="_blank">PrestaShop Addons</a></dt>
+						<dd>Enhance your store with templates &amp; modules</dd>
+					</dl>
+					<dl>
+						<dt><a href="http://forge.prestashop.com?utm_source=back-office&amp;utm_medium=dashboard&amp;utm_campaign=back-office-EN&amp;utm_content=download" class="_blank">The Forge</a></dt>
+						<dd>Report issues in the Bug Tracker</dd>
+					</dl>
+					<dl>
+						<dt><a href="http://www.prestashop.com/en/contact-us?utm_source=back-office&amp;utm_medium=dashboard&amp;utm_campaign=back-office-EN&amp;utm_content=download" class="_blank">Contact Us!</a></dt>
+						<dd></dd>
+					</dl>
+			</section>
+			<section class="dash_simulation panel">
+				<h3><i class="icon-link"></i> Demo Mode</h3>
+				<span class="switch prestashop-switch">
+					<input id="PS_DASHBOARD_SIMULATION_on" class="ps_dashboard_simulation" type="radio"  value="1" name="PS_DASHBOARD_SIMULATION">
+					<label class="radioCheck" for="PS_DASHBOARD_SIMULATION_on">
+						On
+					</label>
+					<input id="PS_DASHBOARD_SIMULATION_off" class="ps_dashboard_simulation" type="radio" checked="checked" value="0" name="PS_DASHBOARD_SIMULATION">
+					<label class="radioCheck" for="PS_DASHBOARD_SIMULATION_off">
+						Off
+					</label>
+					<a class="slide-button btn"></a>
+				</span>
+				This mode displays sample data so you can try your dashboard without real numbers.
+			</section>
+
+		</div>
+	</div>
+</div>
+
+			</div>
+</div>
+
+	</div>
+</div>
+<div id="footer" class="bootstrap hide">
+
+	<div class="col-sm-2 hidden-xs">
+		<a href="http://www.prestashop.com/" class="_blank">PrestaShop&trade; 1.6.0.14</a>
+		-
+		<span id="footer-load-time"><i class="icon-time" title="Load time"></i> 0.124s</span>
+	</div>
+
+	<div class="col-sm-2 hidden-xs">
+		<div class="social-networks">
+			<a class="link-social link-twitter _blank" href="https://twitter.com/PrestaShop" title="Twitter">
+				<i class="icon-twitter"></i>
+			</a>
+			<a class="link-social link-facebook _blank" href="https://www.facebook.com/prestashop" title="Facebook">
+				<i class="icon-facebook"></i>
+			</a>
+			<a class="link-social link-github _blank" href="https://www.prestashop.com/github" title="Github">
+				<i class="icon-github"></i>
+			</a>
+			<a class="link-social link-google _blank" href="https://plus.google.com/+prestashop/" title="Google">
+				<i class="icon-google-plus"></i>
+			</a>
+		</div>
+	</div>
+	<div class="col-sm-5">
+		<div class="footer-contact">
+			<a href="http://www.prestashop.com/en/contact_us?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-EN&amp;utm_content=download" class="footer_link _blank">
+				<i class="icon-envelope"></i>
+				Contact
+			</a>
+			/&nbsp;
+			<a href="http://forge.prestashop.com/?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-EN&amp;utm_content=download" class="footer_link _blank">
+				<i class="icon-bug"></i>
+				Bug Tracker
+			</a>
+			/&nbsp;
+			<a href="http://www.prestashop.com/forums/?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-EN&amp;utm_content=download" class="footer_link _blank">
+				<i class="icon-comments"></i>
+				Forum
+			</a>
+			/&nbsp;
+			<a href="http://addons.prestashop.com/?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-EN&amp;utm_content=download" class="footer_link _blank">
+				<i class="icon-puzzle-piece"></i>
+				Addons
+			</a>
+			/&nbsp;
+			<a href="http://www.prestashop.com/en/training-prestashop?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-EN&amp;utm_content=download" class="footer_link _blank">
+				<i class="icon-book"></i>
+				Training
+			</a>
+					</div>
+	</div>
+
+	<div class="col-sm-3">
+		
+	</div>
+
+	<div id="go-top" class="hide"><i class="icon-arrow-up"></i></div>
+</div>
+
+<div class="bootstrap">
+	<div class="modal fade" id="modal_addons_connect" tabindex="-1">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+						<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"><i class="icon-puzzle-piece"></i> <a target="_blank" href="http://addons.prestashop.com/?utm_source=back-office&utm_medium=modules&utm_campaign=back-office-EN&utm_content=download">PrestaShop Addons</a></h4>
+			</div>
+			
+			
+<div class="modal-body">
+						<!--start addons login-->
+			<form id="addons_login_form" method="post" >
+				<div>
+					<a href="//addons.prestashop.com/en/login?email=admin%40gmail.com&amp;firstname=admin&amp;lastname=admin&amp;website=http%3A%2F%2Fwww.belgastoelen.be%2F&amp;utm_source=back-office&amp;utm_medium=connect-to-addons&amp;utm_campaign=back-office-EN&amp;utm_content=download#createnow"><img class="img-responsive center-block" src="themes/default/img/prestashop-addons-logo.png" alt="Logo PrestaShop Addons"/></a>
+					<h3 class="text-center">Connect your shop with PrestaShop&#039;s marketplace in order to automatically import all your Addons purchases.</h3>
+					<hr />
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-push-6">
+						<h4>Connect to PrestaShop Addons</h4>
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="icon-user"></i></span>
+								<input id="username_addons" name="username_addons" type="text" value="" autocomplete="off" class="form-control ac_input">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="icon-key"></i></span>
+								<input id="password_addons" name="password_addons" type="password" value="" autocomplete="off" class="form-control ac_input">
+							</div>
+							<a class="btn btn-link pull-right _blank" href="//addons.prestashop.com/en/forgot-your-password">I forgot my password</a>
+							<br>
+						</div>
+						<div class="form-group">
+							<button id="addons_login_button" class="btn btn-primary btn-block btn-lg" type="submit">
+								<i class="icon-unlock"></i> Sign in
+							</button>
+						</div>
+					</div>
+					<div class="col-md-5 col-md-pull-6">
+						<h4>Don&#039;t have an account?</h4>
+						<p class='text-justify'>Discover the Power of PrestaShop Addons! Explore the PrestaShop Official Marketplace and find over 3 500 innovative modules and themes that optimize conversion rates, increase traffic, build customer loyalty and maximize your productivity</p>
+						<a class="btn btn-default btn-block _blank" href="//addons.prestashop.com/en/login?email=admin%40gmail.com&amp;firstname=admin&amp;lastname=admin&amp;website=http%3A%2F%2Fwww.belgastoelen.be%2F&amp;utm_source=back-office&amp;utm_medium=connect-to-addons&amp;utm_campaign=back-office-EN&amp;utm_content=download#createnow">
+							Create an Account
+							<i class="icon-external-link"></i>
+						</a>
+					</div>
+				</div>
+
+				<div id="addons_loading" class="help-block"></div>
+
+			</form>
+			<!--end addons login-->
+			</div>
+
+
+					</div>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
