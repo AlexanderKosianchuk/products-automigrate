@@ -1,18 +1,14 @@
 
 var request = require('request');
 var fs = require('fs');
+var cheerio = require('cheerio')
 
 const access = require('./pass');
 
-var options = {
-    host: 'http://www.belgameubelen.luch15.com',
-    path: '/apanel/index.php?controller=AdminLogin&token=',
-};
-
-var request = request.defaults({jar: true})
+var request = request.defaults({ jar: true })
 
 let promise = new Promise((resolve, reject) => {
-    request.post({ url: options.host + options.path + access.token,
+    request.post({ url: access.host+access.path+access.token,
         form: {
             email: access.email,
             passwd: access.pass,
@@ -37,8 +33,8 @@ let promise = new Promise((resolve, reject) => {
 promise.then((res) => {
     return new Promise((resolve, reject) => {
         request.cookie(res.cookie);
-        console.log(res.location);
-        request.get(options.host + '/apanel/' + res.location,
+
+        request.get(access.host + '/apanel/' + res.location,
             (err, httpResponse, body) => {
                 if (err) {
                     reject(err);
@@ -52,10 +48,10 @@ promise.then((res) => {
 })
 .then((res) => {
     return new Promise((resolve, reject) => {
-        console.log(options.host + '/apanel/index.php?controller=AdminProducts&token='
-            + access.token + '&setShopContext=s-7');
-        request.get(options.host + '/apanel/index.php?controller=AdminProducts&token='
-            + access.token + '&setShopContext=s-7',
+        let $ = cheerio.load(res);
+        let href = '/apanel/' + $('li#subtab-AdminProducts a').attr('href') + '&setShopContext=s-7';
+
+        request.get(access.host + href,
             (err, httpResponse, body) => {
                 if (err) {
                     reject(err);
