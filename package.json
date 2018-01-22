@@ -19,6 +19,7 @@
   "homepage": "https://github.com/AlexanderKosianchuk/products-automigrate#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "query-string": "^5.0.1",
     "request": "^2.83.0"
   }
 }
